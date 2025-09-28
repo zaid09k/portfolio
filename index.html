@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PORTFOLIO — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden></div>
+        <div>
+          <div style="font-weight:700">ZAID KHAN</div>
+          <div style="font-size:0.85rem;color:var(--muted)">Full Stack Developer • Designer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact" class="btn-primary">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <h1>Hey — I'm ZAID KHAN.</h1>
+          <div class="role">Collaborated with the backend team to build RESTful APIs using Node.js and Express.</div>
+          <p>I’m a Full Stackdeveloper focused on creating accessible, responsive experiences. Below are some selected projects — feel free to reach out!</p>
+          <div class="cta-row">
+            <a class="btn-primary" href="#projects">See projects</a>
+            <a class="btn-secondary" href="#contact">Hire me</a>
+          </div>
+        </div>
+
+        <aside class="profile-card">
+          <div class="avatar">YN</div>
+          <div style="text-align:center">
+            <div style="font-weight:700">ZAID KHAN</div>
+            <div style="color:var(--muted);font-size:0.95rem">Full Stack Developer</div>
+          </div>
+          <div class="stats">
+            <div class="stat"><b>5+</b><small style="color:var(--muted)">Projects</small></div>
+            <div class="stat"><b>1</b><small style="color:var(--muted)">Years</small></div>
+            <div class="stat"><b>Available</b><small style="color:var(--muted)">for hire</small></div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Selected Projects</h2>
+        <div class="projects">
+          <article class="project">
+            <div class="thumb">Project A</div>
+            <h3>Project A — Landing Page</h3>
+            <p>Responsive landing page with animations and accessible forms.</p>
+          </article>
+
+          <article class="project">
+            <div class="thumb">Project B</div>
+            <h3>Project B — Dashboard</h3>
+            <p>Admin dashboard built with charts and real-time updates.</p>
+          </article>
+
+          <article class="project">
+            <div class="thumb">Project C</div>
+            <h3>Project C — X-ray analyser</h3>
+            <p>AI-powered tool that detects anomalies in X‑ray images, helping radiologists with fast and accurate diagnosis.</p>
+          </article>
+
+          <article class="project">
+            <div class="thumb">Project D</div>
+            <h3>Project D — SKIN DISEASE DETECTION</h3>
+            <p>AI-based system that classifies skin diseases from dermoscopic images using deep learning for early and accurate diagnosis</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="two-col">
+          <div>
+            <p class="role">Technologies I use</p>
+            <div>
+              <span class="skill-bubble">HTML</span>
+              <span class="skill-bubble">CSS</span>
+              <span class="skill-bubble">JavaScript</span>
+              <span class="skill-bubble">React</span>
+              <span class="skill-bubble">Python</span>
+              <span class="skill-bubble">Mysql</span>
+              <span class="skill-bubble">DSA</span>
+            </div>
+
+            <h3 style="margin-top:18px">Experience</h3>
+            <p style="color:var(--muted)">I work on end-to-end projects from prototypes to production. I focus on performance, accessibility and delightful UX.</p>
+          </div>
+
+          <aside>
+            <h3>Contact</h3>
+            <form id="contact" class="contact" onsubmit="handleSubmit(event)">
+              <input id="name" placeholder="Your name" required />
+              <input id="email" placeholder="Email" type="email" required />
+              <textarea id="message" rows="5" placeholder="Message" required></textarea>
+              <button class="submit" type="submit">Send message</button>
+              <div id="formMsg" class="formMsg"></div>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <footer>
+        <div>Made with ❤️ — ZAID KHAN • <span style="color:var(--muted)">Built with plain HTML/CSS</span></div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
